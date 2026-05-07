@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { useState, useEffect } from 'react';
 import { nactiBalicky, ulozVysledek } from '@/storage/decks';
+import { zaznamenajAktivitu } from '@/storage/notifications';
 
 export default function StudyScreen() {
     const router = useRouter();
@@ -55,6 +56,7 @@ export default function StudyScreen() {
                 spravne: novyZnam,
                 celkem: karticky.length,
             });
+            zaznamenajAktivitu();
         }
         setZnamCount(novyZnam);
         setIndex(novyIndex);
