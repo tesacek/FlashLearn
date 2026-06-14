@@ -33,7 +33,7 @@ export async function naplanovNotifikaci(): Promise<void> {
         },
         trigger: {
             type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL,
-            seconds: 60 * 60 * 24,
+            seconds: 24 * 60 * 60,
             repeats: false,
         },
     });

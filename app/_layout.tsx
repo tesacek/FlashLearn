@@ -19,7 +19,6 @@ export default function RootLayout() {
                 <Stack.Screen name="new-deck" options={{ headerShown: false }} />
                 <Stack.Screen name="study" options={{ headerShown: false }} />
                 <Stack.Screen name="edit-deck" options={{ headerShown: false }} />
-                <Stack.Screen name="ai-deck" options={{ headerShown: false }} />
             </Stack>
             <StatusBar style="auto" />
         </ThemeProvider>

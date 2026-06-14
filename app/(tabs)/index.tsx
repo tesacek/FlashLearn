@@ -18,9 +18,6 @@ export default function HomeScreen() {
         <View style={styles.header}>
           <Text style={styles.nadpis}>FlashLearn</Text>
           <View style={{ flexDirection: 'row', gap: 8 }}>
-            <TouchableOpacity style={styles.aiBtn} onPress={() => router.push('/ai-deck' as any)}>
-              <Text style={styles.aiText}>✨ AI</Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.tlacitko} onPress={() => router.push('/new-deck')}>
               <Text style={styles.tlacitkoText}>+ Nový</Text>
             </TouchableOpacity>
